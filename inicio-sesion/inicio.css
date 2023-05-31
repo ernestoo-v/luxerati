@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'futura';
+    src: url('.../Tipografias/Futura\ Std\ Book.otf');
+}
+
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'futura', sans-serif;
+}
+
+form {
+    width: 80%;
+}
+
+form input {
+    background-color: none;
+}
+
+.log {
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+    height: 80vh;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.505);
+}
+
+.login,
+.singUp-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    width: 50%;
+    height: 100%;
+    background: #1e2936f2;
+    /* padding: 20px 30px; */
+    border-top: 5px solid #ffffffc3;
+}
+
+.singUp-active,
+.login-active {
+    display: none;
+}
+
+.login div:nth-child(1),
+.login div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.login div:nth-child(1) {
+    justify-content: flex-end;
+}
+
+.login div:nth-child(2) {
+    gap: 25px;
+}
+
+.login h3,
+.singUp h3,
+.singUp-active h3 {
+    font-size: 65px;
+    text-align: center;
+    height: 30%;
+    color: white;
+    /* background-color: red; */
+}
+
+.singUp {
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 65px;
+    width: 50%;
+    height: 100%;
+    padding: 65px 30px;
+    border-top: 5px solid #ffffffc3;
+}
+
+.singUp div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* background-color: blue; */
+}
+
+
+
+.header-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.span_username {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    border: 3px dotted rgb(255, 0, 0);
+    background-color: #ffffff86;
+    color: black;
+    height: auto;
+}
+
+
+.span_username ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: right;
+    width: 100%;
+    height: 100%;
+}
+
+#username {
+    border: 4px rgba(0, 0, 255, 0) solid;
+    width: 100%;
+    padding: 11px 10px;
+}
+
+#password {
+    border: 4px rgba(0, 0, 255, 0) solid;
+    width: 100%;
+    padding: 11px 10px;
+}
+
+.shake-horizontal {
+    border: 4px rgba(223, 86, 86, 0.603) solid;
+    width: 100%;
+    padding: 11px 10px;
+    animation: shake-horizontal .8s cubic-bezier(.455, .03, .515, .955) both;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.label_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.p_error {
+    display: none;
+    align-items: left;
+    width: 100%;
+    height: 30px;
+    justify-content: left;
+    align-items: center;
+    color: rgba(226, 26, 26, 0.852);
+}
+
+
+
+.btn {
+    background: #4c4c4f;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 11px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    -webkit-text-stroke: 2px white;
+    transform: translateX(-2%) translateY(-2%);
+}
+
+.singup {
+    color: white;
+}
+
+.singup a {
+    color: white;
+}
+
+.singup a:hover {
+    color: rgb(91, 91, 91);
+}
+
+@keyframes shake-horizontal {
+
+    0%,
+    100% {
+        transform: translateX(0)
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateX(-10px)
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateX(10px)
+    }
+
+    80% {
+        transform: translateX(8px)
+    }
+
+    90% {
+        transform: translateX(-8px)
+    }
+}

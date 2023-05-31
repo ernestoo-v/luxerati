@@ -1,0 +1,200 @@
+.header-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.singUp-active div:nth-child(1),
+.singUp-active div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.singUp-active div:nth-child(1) {
+    justify-content: flex-end;
+}
+
+.singUp-active div:nth-child(2) {
+    gap: 25px;
+}
+
+
+.span_email,
+.span_username {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    border: 3px dotted rgb(255, 0, 0);
+    background-color: #ffffff86;
+    color: black;
+    height: auto;
+}
+
+
+.span_email ul,
+.span_username ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: right;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    /* background-color: red; */
+
+}
+
+#email {
+    /* background-color: rgba(86, 223, 86, 0.603);
+    background-color: rgba(223, 86, 86, 0.603); */
+    border: 5.5px rgba(0, 0, 0, 0) solid;
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.login h3 {
+    margin: 0;
+    font-size: 65px;
+    text-align: center;
+    height: 30%;
+    margin-bottom: 15px;
+    color: white;
+    transition: 0.5s;
+}
+
+.label_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+
+}
+
+#email {
+    width: 100%;
+    padding: 11px 10px;
+    background-color: #00000000;
+}
+
+#singUp-username {
+    border: 5.5px rgba(0, 0, 0, 0) solid;
+    width: 100%;
+    padding: 11px 10px;
+}
+
+#singUp-password {
+    width: 100%;
+    padding: 11px 10px;
+}
+
+.div_input_email,
+.div_input_username {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    background-color: #ffffff !important;
+    /* background-color: red; */
+    gap: 3px;
+    width: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+}
+
+.div_input_email i,
+.div_input_username i {
+    padding-right: 15px;
+}
+
+.div_email,
+.p_error {
+    display: none;
+    align-items: left;
+    width: 100%;
+    height: 10px;
+    justify-content: left;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    padding: 5px;
+    background-color: rgb(247, 156, 156);
+    box-shadow: 4px 4px #88888868;
+}
+
+.p_error i {
+
+    padding-right: 10px;
+
+}
+
+.btn {
+    background: #4c4c4f;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 11px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    -webkit-text-stroke: 2px white;
+    transform: translateX(-2%) translateY(-2%);
+}
+
+.loginText {
+
+    color: white;
+}
+
+.loginText a {
+    color: white;
+}
+
+.loginText a:hover {
+    color: rgb(91, 91, 91);
+}
